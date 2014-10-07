@@ -1,0 +1,306 @@
+<h1 id="reading-and-research-selection-statements">Reading and Research - Selection Statements</h1>
+
+<p>These tasks are designed to introduce you to the programming topic we will be studying in class next lesson. You <strong>must</strong> complete these activities prior to the lesson.</p>
+
+
+
+<h2 id="boolean-expressions">Boolean Expressions</h2>
+
+<p>One of the most common tasks in computer programming is to <strong>evaluate an expression</strong>. An expression allows us to test whether a value (or set of values) meets particular criteria. The Python shell can evaluate expressions, we will use this to investigate expressions further.</p>
+
+
+
+<h3 id="task-1">Task 1</h3>
+
+<p>Use the Python shell to investigate the expressions given below, describe what each symbol represents and indicate whether the expression evaluates to <code>True</code> or <code>False</code>.</p>
+
+<p><img src="https://www.dropbox.com/s/2yaariz84s3kf5z/task_one.jpg?dl=1" alt="" title=""></p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Expression</th>
+  <th>Symbol description</th>
+  <th>Result</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><code>2 == 4</code></td>
+  <td><em>equals</em></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>5 &gt; 3</code></td>
+  <td><em>equals</em></td>
+  <td><code>True</code></td>
+</tr>
+<tr>
+  <td align="center"><code>4 &gt;= 4</code></td>
+  <td><em>equals</em></td>
+  <td><code>True</code></td>
+</tr>
+<tr>
+  <td align="center"><code>3 &lt; 2</code></td>
+  <td><em>equals</em></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>7 &lt;= 7</code></td>
+  <td><em>equals</em></td>
+  <td><code>True</code></td>
+</tr>
+<tr>
+  <td align="center"><code>8 != 9</code></td>
+  <td><em>equals</em></td>
+  <td><code>True</code></td>
+</tr>
+</tbody></table>
+
+
+<p>The symbols in <strong>Task 1</strong> are called <strong>relational operators</strong> and when an expression containing a relational operator is evaluated it returns a <strong>boolean value</strong> (True or False) as an answer.</p>
+
+<p>In addition to evaluating expressions containing numbers we can also use <strong>variables</strong> in expressions. For example, imagine we had the following variable:</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">test_score = <span class="hljs-number">56</span></code></pre>
+
+<p>We could use boolean expressions to evaluate whether testScore meets certain criteria (for example whether it is greater than the pass mark of 50). Let’s test this out:</p>
+
+
+
+<h3 id="task-2">Task 2</h3>
+
+<p>Enter <code>testScore = 56</code> into the Python shell and then investigate the expressions below.</p>
+
+<p><img src="https://www.dropbox.com/s/9mh1ob3uxqdhvz0/task_two.png?dl=1" alt="" title=""></p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Expression</th>
+  <th>Symbol description</th>
+  <th>Result</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><code>test_score == 50</code></td>
+  <td><em>equals</em></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>test_score &gt; 40</code></td>
+  <td><em>equals</em></td>
+  <td><code>True</code></td>
+</tr>
+<tr>
+  <td align="center"><code>test_score &gt;= 60</code></td>
+  <td><em>equals</em></td>
+  <td><code>True</code></td>
+</tr>
+<tr>
+  <td align="center"><code>test_score &lt; 40</code></td>
+  <td><em>equals</em></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>50 &lt;= test_score</code></td>
+  <td><em>equals</em></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>56 != test_score</code></td>
+  <td><em>equals</em></td>
+  <td><code>False</code></td>
+</tr>
+</tbody></table>
+
+
+
+
+<h2 id="more-complex-boolean-expressions">More complex boolean expressions</h2>
+
+<p>Sometimes it is not enough to evaluate an expression on a single criteria. We can create more complicated boolean expressions using boolean operators. There are three boolean operators that we must consider in programming:</p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Operator</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><code>and</code></td>
+</tr>
+<tr>
+  <td align="center"><code>or</code></td>
+</tr>
+<tr>
+  <td align="center"><code>not</code></td>
+</tr>
+</tbody></table>
+
+
+<p>The <code>and</code> and <code>or</code> operators can be used to join expressions together into more complex expressions. The <code>not</code> operator is used to invert an expressions evaluation. For example if an expression evaluated to <code>True</code> using the <code>not</code> operator would make the result equal <code>False</code>.</p>
+
+
+
+<h3 id="task-3">Task 3</h3>
+
+<p>Let’s look at some straightforward examples. Use the Python shell to evaluate the following expressions:</p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Expression</th>
+  <th>Result</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><code>True and True</code></td>
+  <td><code>True</code></td>
+</tr>
+<tr>
+  <td align="center"><code>True and False</code></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>False and True</code></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>False and False</code></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>True or True</code></td>
+  <td><code>True</code></td>
+</tr>
+<tr>
+  <td align="center"><code>True or False</code></td>
+  <td><code>True</code></td>
+</tr>
+<tr>
+  <td align="center"><code>False or True</code></td>
+  <td><code>True</code></td>
+</tr>
+<tr>
+  <td align="center"><code>False or False</code></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>not(True)</code></td>
+  <td><code>False</code></td>
+</tr>
+<tr>
+  <td align="center"><code>not(False)</code></td>
+  <td><code>True</code></td>
+</tr>
+</tbody></table>
+
+
+<p>Having completed the above table, use the space below to describe when <code>and</code> and <code>or</code> evaluate to <code>True</code>:</p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Operator</th>
+  <th>When it evaluates to <code>True</code></th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><code>and</code></td>
+  <td><code>When both are true</code></td>
+</tr>
+<tr>
+  <td align="center"><code>or</code></td>
+  <td><code>When one of them is true</code></td>
+</tr>
+</tbody></table>
+
+
+
+
+<h2 id="selection-statements">Selection statements</h2>
+
+<p>Before we find out more about selection statements let look at an example:</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">test_score = <span class="hljs-number">56</span>
+<span class="hljs-keyword">if</span> test_score &gt;= <span class="hljs-number">50</span>:
+    print(<span class="hljs-string">"Pass"</span>)
+<span class="hljs-keyword">if</span> test_score &lt; <span class="hljs-number">50</span>:
+    print(<span class="hljs-string">"Fail"</span>)</code></pre>
+
+
+
+<h3 id="task-4">Task 4</h3>
+
+<p>Without entering the code into Python, attempt to explain what the code does, using the space below for your answer:</p>
+
+<table>
+<thead>
+<tr>
+  <th>answer</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td><code>It creates a code which does a selection</code></td>
+</tr>
+</tbody></table>
+
+
+<p>Now that we have looked at an example it is time to investigate selection statements in more detail. We will use the  <a href="http://www.pythonschool.net">Python School website</a> to do this.</p>
+
+
+
+<h3 id="task-5">Task 5</h3>
+
+<p>Read the following two pages on Python Summer School and attempt the exercises mentioned.</p>
+
+<ol>
+<li><a href="http://pythonschool.github.io/basics/the-if-statement/">The IF Statement in Python</a> <br>
+<ul><li>The exercise at the bottom of the page</li></ul></li>
+<li><a href="http://pythonschool.github.io/basics/more-on-if/">More on IF Statements in Python</a> <br>
+<ul><li>The <strong>first</strong> exercise at the bottom of the page</li></ul></li>
+</ol>
+
+
+
+<h3 id="task-6">Task 6</h3>
+
+<p>In the space below <strong>paste</strong> the code from each of the exercises in Task 5 and include a screenshot of you running each program successfully.</p>
+
+
+
+<h1 id="task-51">task 5.1</h1>
+
+
+
+<p><code>age= int(input("Enter your age: ")) <br>
+if age &gt;= 18: <br>
+    print("You are old enough to vote") <br>
+else: <br>
+    print("You are too young to vote")</code></p>
+
+<p>!<a href="">Screenshot of task 5.1</a></p>
+
+<h1 id="task-52">task 5.2</h1>
+
+<p><code>number==(int(input("Enter a number between 1 and 10: ") <br>
+if number &gt;1 and number&lt;10 <br>
+   print("The number is within the range") <br>
+elif number&lt;1 <br>
+     print("The number is too low") <br>
+else number&gt;10 <br>
+     print("The number is too high")</code></p>
+
+<p>!<a href="">Screenshot of task 5.2</a></p>
+
+
+
+<h2 id="summary">Summary</h2>
+
+<p>In this R&amp;R you have investigated selection statements. You have seen how expressions are constructed from relational operators and boolean operators. You have have seen the structure and syntax of a basic selection statement and had the opportunity to create programs that use this statement.</p>
+
+<p>Please make sure you have completed this R&amp;R fully before your next programming lesson as it will form the basis of the initial classroom discussion and starter tasks.</p>
